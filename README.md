@@ -75,20 +75,41 @@ How will you ensure that you are creating a safe environment where everyone feel
 
 ## Work Plan
 
-How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
-What project management tool will be used?
+-How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
+  we will have a roundtable in the mornings where we will be looking at what needs to be done and assigned tasks. We can talk over slack/remo about the tasks we are assigned. We will have an meeting for 30 mins in the morning to brainstorm strategy and ideas for the day. As well we will let the group know when a task is complete
+
+-What project management tool will be used?
+  we will make a to-do list for each day laying out what needs to be done.
 
 
 ## Git Process
 
 - What components of your project will live on GitHub?
-- How will you share the repository with your teammates?
+  The completed project and a merged files from our combined code.
+  
+  
+- How will you share the repository with your teammates
+We will make an organization that we all have access and permissions on.
+  
 - What is your Git flow?
+  We will all work off of the dev branch and when a commit is ready we will push it up and then merge it to the main branch when completed
+
+  
 - Will you be using a PR review workflow? If so, consider:
+  Yes we will use pull request
+  
    - How many people must review a PR?
+    two people need to approve pull requests
+    
    - Who merges PRs?
+    Two group members that were not the owner of the request
+    
    - How often will you merge?
+    whenever a part of the site is completed we will merge
+      
    - How will you communicate that it’s time to merge?
+      we will all agree that it is time to merge and do it together
+    
 
 
 
