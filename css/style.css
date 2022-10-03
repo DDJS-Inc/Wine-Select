@@ -1,3 +1,31 @@
+.wine-header {
+max-width: 100%;
+background-color: #314e16c3;
+}
+
+.wine-header h1 {
+  text-align: center;
+  font-size: 6vw;
+  font-family: 'Dancing Script', cursive;
+  color: #ffffff;
+  padding: 30px;
+
+
+}
+
+#hero {
+  max-width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
 .sidebar {
   height: 100%;
   width: 0; 
@@ -47,11 +75,11 @@
 
 
 .openbtn {
-  font-size: 20px;
+  font-size: 2vw;
   cursor: pointer;
-  background-color: #682578;
+  background-color: #6b2d7bd5;
   color: white;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border: none;
   font-family: 'Montserrat', sans-serif;
 }
