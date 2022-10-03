@@ -13,10 +13,7 @@ background-color: #314e16c3;
 
 }
 
-.hero {
-  max-width: 100%;
 
-}
 
 
 
@@ -87,3 +84,35 @@ background-color: #314e16c3;
 .openbtn:hover {
   background-color:  #41298092;
 }
+
+ .img2 {
+  max-height: 300px;
+  max-width: 200px;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.hero {
+  max-width: 100%;
+
+}
+
+#back {
+  position:absolute;
+  z-index: 5;
+}
+
+
+#container-event {
+  /* background-image: url('../img/background1.jpeg'); */
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 500px;
+}
+
+#front {
+  z-index: 9;
+  position: relative;
+}
+
