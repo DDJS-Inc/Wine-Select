@@ -9,16 +9,47 @@ background-color: #314e16c3;
   font-family: 'Dancing Script', cursive;
   color: #ffffff;
   padding: 30px;
+  
+
+}
+
+#containerindex{
+  position: relative;
+}
+
+.choose1 {
+  max-height: 30vw;
+  max-width: 28.5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3vw;
+  text-align: center;
+  padding-top: 15vw;
+  border-radius: 20%;
 
 
 }
 
+.choose1:hover {
+  opacity: 80%;
 
+}
 
+#wine {
+  float: left;
+  margin-left: 2vw;
+}
 
+#diner1 {
+  margin-right: 2vw;
+}
 
+#indexpic {
+  z-index: 9;
+  position: relative;
 
-
+}
 
 
 
@@ -35,6 +66,7 @@ background-color: #314e16c3;
   overflow-x: hidden; 
   padding-top: 60px; 
   transition: 0.5s; 
+  z-index: 10;
 }
 
 
@@ -74,11 +106,14 @@ background-color: #314e16c3;
 .openbtn {
   font-size: 2vw;
   cursor: pointer;
-  background-color: #6b2d7bd5;
+  background-color: #4b2213d5;
   color: white;
   padding: 15px 20px;
   border: none;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 25%;
+  margin-top: 1vw;
+  margin-left: 1vw;
 }
 
 .openbtn:hover {
