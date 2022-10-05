@@ -1,17 +1,19 @@
 
 /* GLOBAL */
 
+
+
 .wine-header {
   max-width: 100%;
   background-color: #314e16c3;
 }
 
 .wine-header h1 {
-  text-align: center;
+  text-align:center;
   font-size: 6vw;
   font-family: 'Dancing Script', cursive;
   color: #ffffff;
-  padding: 30px;
+  padding: 8px 8px 8px 32px;
 }
   
   .sidebar {
@@ -21,7 +23,7 @@
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #523875; 
+    background-color: #7dac53b0; 
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden; 
     padding-top: 60px; 
@@ -64,26 +66,33 @@
   
   
   .openbtn {
+    /* padding: 8px 8px 8px 32px; */
     font-size: 2vw;
     cursor: pointer;
-    background-color: #4b2213d5;
+    background-color: #4b221300;
     color: white;
-    padding: 15px 20px;
+    padding: 5px 2px;
     border: none;
     font-family: 'Montserrat', sans-serif;
     border-radius: 25%;
     margin-top: 1vw;
     margin-left: 1vw;
+    font-size: 32px;
+    display: inline;
+    float: left;
+    margin-top: 30px;
   }
   
   .openbtn:hover {
-    background-color:  #41298092;
+    color: rgba(255, 255, 255, 0.498);
   }
   
-  .hero {
-    max-width: 100%;
-    max-height: 80vw;
-  }
+
+  /* .hero {
+    max-width: 10%;
+  
+  } */
+
 
   /* INDEX HTML HOMEPAGE */
 
@@ -132,10 +141,11 @@
 
 
  .img2 {
-  max-height: 300px;
-  max-width: 200px;
+  max-height: 500px;
+  max-width: 220px;
   padding: 20px;
   border-radius: 10%;
+  /* border: 5px solid rgb(255, 255, 255); */
 }
 
 
@@ -146,15 +156,59 @@
 
 
 #container-event {
-
-  display:flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   min-height: 500px;
 }
 
 #front {
+  display:flex;
   z-index: 9;
+  position: relative;
+}
+
+.container2 {
+  padding-top: 12%;
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  /* background-color: red; */
+}
+
+.overlay {
+  position:absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 62.5%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  left: 7%;
+  bottom: 24px;
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+ .bg-img {
+  /* The image used */
+  background-image: url("../img/background1.jpeg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
   position: relative;
 }
 
@@ -203,3 +257,11 @@
   position: relative;
 }
 
+/* selectevent html */
+
+.wineselect {
+  height: 30vw;
+  width: 10vw;
+  margin-left: 27vw;
+  padding-top: 7vw;
+}

@@ -1,6 +1,7 @@
 'use strict';
 
 // ******** GLOABAL VARIABLES **********
+
 let wineArray = [];
 let matchwine = [];
 let clickimg = '';
@@ -8,24 +9,28 @@ let clickimg = '';
 
 
 // ******** DOM REFERENCES **********
-let imgContainer = document.getElementById('img-container');
+
+let imgContainer = document.getElementById('container-event');
+
+
 
 
 // ******** JS VIEWS SOURCE AS PROPERTY *******
 // let imgOne = document.getElementById('imgone');
 // let imgTwo = document.getElementById('imgtwo');
 
+
 //  ******** CONSTRUCTOR FUNCTION ********
 
 function Wine(name, category, fileExtension = 'png') {
   this.name = name;
-  this.img = `./img/${name}.${fileExtension}`;
+  this.img = `./wineimg/${name}.${fileExtension}`;
   this.category = category;
-
-
-
   wineArray.push(this);
 }
+
+
+
 
 
 
@@ -46,10 +51,13 @@ function handleClick(event) {
     }
   }
 
+  window.location.href = 'selectevent.html';
   console.log(matchwine);
   console.log(wineArray);
   console.log(clickimg);
 }
+
+
 
 
 function retrieveWine() {
@@ -58,10 +66,15 @@ function retrieveWine() {
     let parseWine = JSON.parse(wine);
     matchwine = parseWine;
   } else {
-    new Wine('cab1', ['steak']);
-    new Wine('cab2', ['steak']);
-    new Wine('sweet1', ['fish']);
-    new Wine('sweet2', ['fish']);
+    new Wine('cab1', ['steak', 'social']);
+    new Wine('syrah1', ['steak']);
+    new Wine('zin1', ['chicken']);
+    new Wine('pn2', ['choc']);
+    new Wine('chard1', ['fish']);
+    new Wine('sb5', ['choc']);
+    new Wine('pg1', ['social', 'fish']);
+    new Wine('sweet3', ['chicken']);
+
   }
   console.log(wine);
 }
@@ -77,7 +90,9 @@ function saveWine() {
 
 
 
-let imgTwo = document.getElementById('twoWine');
+function bottleclick() {
+
+}
 
 function renderWine() {
 
@@ -91,16 +106,14 @@ function renderWine() {
         let imgOne = document.getElementById('img-container');
         let imgOneelem = document.createElement('img');
         imgOneelem.setAttribute('src', wineArray[i].img);
+        imgOneelem.setAttribute('class', 'wineselect');
         imgOne.appendChild(imgOneelem);
-        // imgOne.src = matchwine[i].img;
-        // imgTwo.src = matchwine[i].img;
-        // imgOne.alt = wineArray[i].name;
-        // imgTwo.alt = wineArray[i].name;
+        imgOneelem.addEventListener('click', bottleclick);
       }
     }
   }
+  localStorage.removeItem('clicked');
 }
-
 
 
 
@@ -115,8 +128,8 @@ retrieveWine();
 
 renderWine();
 
-
 saveWine();
+
 
 
 
