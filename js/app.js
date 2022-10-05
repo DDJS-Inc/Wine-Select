@@ -1,6 +1,7 @@
 'use strict';
 
 // ******** GLOABAL VARIABLES **********
+
 let wineArray = [];
 let matchwine = [];
 let clickimg = '';
@@ -8,12 +9,16 @@ let clickimg = '';
 
 
 // ******** DOM REFERENCES **********
+
 let imgContainer = document.getElementById('container-event');
+
+
 
 
 // ******** JS VIEWS SOURCE AS PROPERTY *******
 // let imgOne = document.getElementById('imgone');
 // let imgTwo = document.getElementById('imgtwo');
+
 
 //  ******** CONSTRUCTOR FUNCTION ********
 
