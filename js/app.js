@@ -1,6 +1,7 @@
 'use strict';
 
 // ******** GLOABAL VARIABLES **********
+
 let wineArray = [];
 let matchwine = [];
 let clickimg = '';
@@ -14,6 +15,7 @@ let clickimg = '';
 // ******** JS VIEWS SOURCE AS PROPERTY *******
 // let imgOne = document.getElementById('imgone');
 // let imgTwo = document.getElementById('imgtwo');
+
 
 //  ******** CONSTRUCTOR FUNCTION ********
 
@@ -100,7 +102,6 @@ function renderWine() {
     }
   }
 }
-
 
 
 
