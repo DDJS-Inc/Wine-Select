@@ -105,12 +105,6 @@ function renderWine() {
 
 
 
-
-
-
-
-
-
 retrieveWine();
 
 
