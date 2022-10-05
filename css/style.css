@@ -257,3 +257,11 @@
   position: relative;
 }
 
+/* selectevent html */
+
+.wineselect {
+  height: 30vw;
+  width: 10vw;
+  margin-left: 27vw;
+  padding-top: 7vw;
+}
