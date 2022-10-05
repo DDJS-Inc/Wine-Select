@@ -26,6 +26,7 @@ function Wine(name, category, fileExtension = 'png') {
   this.name = name;
   this.img = `./wineimg/${name}.${fileExtension}`;
   this.category = category;
+  this.link = `./winecatalouge/${name}.html`;
   wineArray.push(this);
 }
 
@@ -71,12 +72,12 @@ function retrieveWine() {
     new Wine('zin1', ['chicken']);
     new Wine('pn2', ['choc']);
     new Wine('chard1', ['fish']);
-    new Wine('sb5', ['choc']);
+    new Wine('sb1', ['choc']);
     new Wine('pg1', ['social', 'fish']);
-    new Wine('sweet3', ['chicken']);
+    new Wine('sweet2', ['chicken']);
 
   }
-  console.log(wine);
+  // console.log(wine);
 }
 
 
@@ -90,8 +91,15 @@ function saveWine() {
 
 
 
-function bottleclick() {
+function bottleclick(event) {
+  console.log(event.target.name);
+  for (let i = 0; i < wineArray.length; i++) {
+    if (wineArray[i].name === event.target.name) {
 
+      console.log(wineArray[i].link);
+      window.location.href = wineArray[i].link;
+    }
+  }
 }
 
 function renderWine() {
@@ -99,7 +107,7 @@ function renderWine() {
   let clicked = localStorage.getItem('clicked');
   for (let i = 0; i < wineArray.length; i++) {
     for (let j = 0; j < wineArray[i].category.length; j++) {
-      console.log(wineArray[i].category[j]);
+      // console.log(wineArray[i].category[j]);
       if (wineArray[i].category[j] === clicked) {
         console.log('we did it');
 
@@ -107,13 +115,16 @@ function renderWine() {
         let imgOneelem = document.createElement('img');
         imgOneelem.setAttribute('src', wineArray[i].img);
         imgOneelem.setAttribute('class', 'wineselect');
+        imgOneelem.setAttribute('name', wineArray[i].name);
         imgOne.appendChild(imgOneelem);
         imgOneelem.addEventListener('click', bottleclick);
+
       }
     }
   }
   localStorage.removeItem('clicked');
 }
+
 
 
 
