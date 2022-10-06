@@ -165,6 +165,7 @@
   display: flex;
   z-index: 9;
   position: relative;
+
 }
 
 .container2 {
@@ -201,7 +202,7 @@
   /* The image used */
   background-image: url("../img/background1.jpeg");
 
-  min-height: 380px;
+  min-height: 40vw;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -317,6 +318,17 @@
   position: relative;
 }
 
+
 p {
   color: #ffffff;
 }
+
+/* selectevent html */
+
+.wineselect {
+  height: 30vw;
+  width: 10vw;
+  margin-left: 27vw;
+  padding-top: 4vw;
+}
+
