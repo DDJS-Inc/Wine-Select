@@ -1,4 +1,5 @@
 /* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
   width: 100vw;
@@ -531,10 +532,13 @@ p {
 }
 
 #footer {
+  font-family: 'Kaushan Script', cursive;
   position: fixed;
   bottom: 0;
   width: 100%;
+
   max-height: 60px;
+
   /* Height of the footer */
   background: #314e16c3;
 }
@@ -542,6 +546,7 @@ p {
 /*varietal html*/
 
 .rowv {
+
   display: flex;
   justify-content: center;
 }
@@ -551,12 +556,14 @@ p {
   white-space: 150px;
   justify-content: center;
   padding-inline: 4%;
+
 }
 
 #cab1 {
   max-width: 5vw;
   margin-left: 1vw;
   object-fit: contain;
+
 }
 
 .winev1 {
@@ -608,4 +615,3 @@ p {
 .winev12 {
   width: 430px;
   padding-left: 26%;
-}
