@@ -1,6 +1,8 @@
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
 body {
   width: 100vw;
 }
@@ -9,6 +11,7 @@ body {
   max-width: 100%;
   background-color: #314e16c3;
 }
+
 
 
 .wine-header h1 {
@@ -26,17 +29,19 @@ body {
   text-align: center;
   font-size: 3.2vw;
   font-family: 'Dancing Script', cursive;
-  color: #f5aaaa;
+  color: #98e3a2;
   margin-top: 1.9vw;
-  text-shadow:
-    0.05em 0 rgba(0, 0, 0, 0.506),
-    0 0.05em rgba(0, 0, 0, 0.506),
-    -0.05em 0 rgba(0, 0, 0, 0.506),
-    0 -0.05em rgba(0, 0, 0, 0.506),
-    -0.05em -0.05em rgba(0, 0, 0, 0.506),
-    -0.05em 0.05em rgba(0, 0, 0, 0.506),
-    0.05em -0.05em rgba(0, 0, 0, 0.506),
-    0.05em 0.05em rgba(0, 0, 0, 0.506);
+
+     text-shadow:
+     0.02em 0 rgba(0, 0, 0, 0.506),
+     0 0.02em rgba(0, 0, 0, 0.506),
+     -0.02em 0 rgba(0, 0, 0, 0.506),
+     0 -0.02em rgba(0, 0, 0, 0.506),
+     -0.02em -0.02em rgba(0, 0, 0, 0.506),
+     -0.02em 0.02em rgba(0, 0, 0, 0.506),
+     0.02em -0.02em rgba(0, 0, 0, 0.506),
+     0.02em 0.02em rgba(0, 0, 0, 0.506);
+
 
 }
 
@@ -326,9 +331,9 @@ body {
 
 .head6 {
 
-  background-image: url("../img/winepeeps.jpg");
+  background-image: url("../img/aboutusbro.jpeg");
 
-  max-height: 900px;
+  height: 50vw;
 
 
   /* Center and scale the image nicely */
@@ -436,11 +441,26 @@ body {
 }
 
 .para {
-  color: #f3faf2;
-  width: 200px;
-  border: 5px solid #314e16c3;
+  color: #fcfcfc;
+  width: 89%;
+  border: 20px solid #314e1691;
   padding: 10px;
   margin: 20px;
+  font-family: 'Kalam', cursive;
+  letter-spacing: 1px;
+  font-size: 2vw;
+  margin-left: 4vw;
+  margin-top: 3vw;
+  text-shadow:
+
+  0.02em 0 rgba(0, 0, 0, 0.506),
+  0 0.02em rgba(0, 0, 0, 0.506),
+  -0.02em 0 rgba(0, 0, 0, 0.506),
+  0 -0.02em rgba(0, 0, 0, 0.506),
+  -0.02em -0.02em rgba(0, 0, 0, 0.506),
+  -0.02em 0.02em rgba(0, 0, 0, 0.506),
+  0.02em -0.02em rgba(0, 0, 0, 0.506),
+  0.02em 0.02em rgba(0, 0, 0, 0.506);
 }
 
 p {
@@ -512,36 +532,52 @@ p {
   margin-right: 1vw;
 }
 
+li {
+  margin-bottom: 3px;
 
+}
 .winep {
   font-size: 50px;
   margin-top: 5vw;
   margin-right: 3vw;
   background-color: #314e16c1;
-  letter-spacing: 5px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  letter-spacing: 3px;
+  font-family: 'Kalam', cursive;
+  color: #ffffffe2;
+}
+
+#hide {
+  color: #f1f1f100;
+}
+
+.addToFavBtn {
+  margin-top: 1vw;
+  margin-left: 29vw;
+  background-color: #314e16e0;
+  color: white;
+  font-size: 2vw;
+  margin-bottom: 3vw;
 }
 
 /* wine favs */
 
 .wineimg1 {
-  max-height: 20vw;
-  margin-left: 1vw;
-  margin-top: 10vw;
+
+  max-height: 18vw;
+  margin-left: 5vw;
+  margin-top: 4vw;
 }
 
-#footer {
-  font-family: 'Kaushan Script', cursive;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+#buttonclear {
+  margin-top: 1vw;
+  margin-left: 43vw;
+  background-color: #314e1683;
+  color: white;
+  font-size: 2vw;
+  margin-bottom: 3vw;
+  } 
 
-  max-height: 60px;
 
-  /* Height of the footer */
-  background: #314e16c3;
-}
 
 /*varietal html*/
 
@@ -563,6 +599,7 @@ p {
   max-width: 5vw;
   margin-left: 1vw;
   object-fit: contain;
+}
 
 }
 
@@ -612,6 +649,9 @@ p {
   width: 128px;
 }
 
+
+
 .winev12 {
   width: 430px;
   padding-left: 26%;
+

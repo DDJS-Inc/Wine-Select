@@ -125,38 +125,30 @@ function renderWine() {
   localStorage.removeItem('clicked');
 }
 
+
 function renderimgfav() {
   let favorites = JSON.parse(localStorage.getItem('favorites'));
-  console.log(favorites);
+  // console.log(favorites);
+  // console.log(favorites.wines.length);
+
   let imgOne = document.getElementById('img-holder');
-  let imgOneelem = document.createElement('img');
-  imgOneelem.setAttribute('src', favorites.wines[0]);
-  imgOneelem.setAttribute('class', 'wineimg1');
-  imgOne.appendChild(imgOneelem);
-  let imgTwoelem = document.createElement('img');
-  imgTwoelem.setAttribute('src', favorites.wines[1]);
-  imgTwoelem.setAttribute('class', 'wineimg1');
-  imgOne.appendChild(imgTwoelem);
-  let imgThreeelem = document.createElement('img');
-  imgThreeelem.setAttribute('src', favorites.wines[2]);
-  imgThreeelem.setAttribute('class', 'wineimg1');
-  imgOne.appendChild(imgThreeelem);
-  let imgFourlem = document.createElement('img');
-  imgFourlem.setAttribute('src', favorites.wines[3]);
-  imgFourlem.setAttribute('class', 'wineimg1');
-  imgOne.appendChild(imgFourlem);
-  let imgfive = document.createElement('img');
-  imgfive.setAttribute('src', favorites.wines[4]);
-  imgfive.setAttribute('class', 'wineimg1');
-  imgOne.appendChild(imgfive);
+  if (imgOne) {
+    for (let i = 0; i < favorites.wines.length && i < 9 ; i++) {
+      let eachwine = document.createElement('img');
+      eachwine.setAttribute('src', favorites.wines[i]);
+      eachwine.setAttribute('class', 'wineimg1');
+      imgOne.appendChild(eachwine);
+    }
+  }
 }
 
 function clearstorage2() {
   localStorage.clear();
   location.reload();
 }
-
-document.getElementById('buttonclear').onclick = clearstorage2;
+if (document.getElementById('buttonclear')) {
+  document.getElementById('buttonclear').onclick = clearstorage2;
+}
 
 
 retrieveWine();
