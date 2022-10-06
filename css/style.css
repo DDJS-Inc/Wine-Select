@@ -337,6 +337,23 @@ body {
   /* Needed to position the navbar */
   position: relative;
 }
+
+.headW {
+
+  background-image: url("../img/winebottoms.jpg");
+
+  max-height: 100%;
+  max-width: 100%;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
 /* PREF HTML */
 
 #cont3 {
@@ -439,4 +456,33 @@ width: 100%;
 
 #cat{
   background-color: rgba(65, 15, 15, 0.299);
+}
+
+/* winepage */
+
+.winepage {
+  max-height: 35vw;
+  float: left;
+  margin-top: 1vw;
+  margin-left: 3vw;
+  margin-right: 1vw;
+}
+
+
+.winep {
+  font-size: 50px;
+  margin-top: 5vw;
+  margin-right: 3vw;
+  background-color: #314e16c1;
+  letter-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+/* wine favs */
+
+.wineimg1 {
+  max-height: 20vw;
+  margin-left: 1vw;
+  margin-top: 10vw;
 }
