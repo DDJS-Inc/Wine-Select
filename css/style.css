@@ -202,8 +202,7 @@ body {
   justify-content: center;
 
   margin-right: 3%;
-  margin-top: 6%;
-
+  margin-top: 2%;
 }
 
 .img2 {
@@ -537,7 +536,9 @@ p {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+
+  max-height: 60px;
+
   /* Height of the footer */
   background: #314e16c3;
 }
@@ -545,26 +546,72 @@ p {
 /*varietal html*/
 
 .rowv {
-  /* margin-top: 6vw;
-    margin-left: 9vw;
-    max-height: 11vw;*/
-  max-width: 10vw;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  max-height: 11vw;
-  text-align: center;
+
+  display: flex;
+  justify-content: center;
 }
 
 .columnv {
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  margin-right: 11vw;
-  height: 200px
+  position: relative;
+  white-space: 150px;
+  justify-content: center;
+  padding-inline: 4%;
+
 }
 
 #cab1 {
   max-width: 5vw;
   margin-left: 1vw;
   object-fit: contain;
+
 }
+
+.winev1 {
+  width: 167px;
+}
+
+.winev2 {
+  width: 123px;
+
+}
+
+.winev3 {
+  width: 165px;
+}
+
+.winev4 {
+  width: 133px;
+}
+
+.winev5 {
+  width: 174px;
+}
+
+.winev6 {
+  width: 128px;
+}
+
+.winev7 {
+  width: 428px;
+}
+
+.winev8 {
+  width: 424px;
+}
+
+.winev9 {
+  width: 145px;
+}
+
+.winev10 {
+  width: 473px;
+  padding-left: 26%;
+}
+
+.winev11 {
+  width: 128px;
+}
+
+.winev12 {
+  width: 430px;
+  padding-left: 26%;
