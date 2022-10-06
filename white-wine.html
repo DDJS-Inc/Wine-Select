@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -11,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wine Select</title>
 </head>
+
 <body class="head4">
   <header class="wine-header">
     <nav>
@@ -18,7 +20,6 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="catolog.html">Wine Menu</a>
-        <a href="cart.html">Checkout</a>
         <a href="favorite-wine.html">Your Favorites</a>
         <a href="#">About</a>
       </div>
@@ -29,47 +30,52 @@
     </nav>
     <h1>Wine Select</h1>
   </header>
-<main>
-  <h2 class="h2">Pick Your Favorite White Wine</h2>
-  
-  <div class="row">
-    <div class="column" id="white1">
-      <a href="winetype-htmls/wine-varietal-sweet.html">
-        <img class="wined" src="/img/wsweet.png" alt="Sweet">
-      </a>
+  <main>
+    <h2 class="h2">Pick Your Favorite White Wine</h2>
+
+    <div class="row">
+      <div class="column" id="white1">
+        <a href="winetype-htmls/wine-varietal-sweet.html">
+          <img class="wined" src="/img/wsweet.png" alt="Sweet">
+        </a>
+      </div>
+      <div class="column" id="white2">
+        <a href="winetype-htmls/wine-varietal-pg.html">
+          <img class="wined" src="/img/wpg.png" alt="Pinot Grigio">
+        </a>
+      </div>
+      <div class="column" id="white3">
+        <a href="winetype-htmls/wine-varietal-sb.html">
+          <img class="wined" src="/img/wsb.png" alt="Sauvignon Blanc">
+        </a>
+      </div>
+      <div class="column" id="white4">
+        <a href="winetype-htmls/wine-varietal-chard.html">
+          <img class="wined" src="/img/wchard.png" alt="Chardonnay">
+        </a>
+      </div>
     </div>
-    <div class="column" id="white2">
-      <a href="winetype-htmls/wine-varietal-pg.html">
-        <img class="wined" src="/img/wpg.png" alt="Pinot Grigio">
-      </a>
-    </div>
-    <div class="column" id="white3">
-      <a href="winetype-htmls/wine-varietal-sb.html">
-        <img class="wined" src="/img/wsb.png" alt="Sauvignon Blanc">
-      </a>
-    </div>
-    <div class="column" id="white4">
-      <a href="winetype-htmls/wine-varietal-chard.html">
-        <img class="wined" src="/img/wchard.png" alt="Chardonnay">
-      </a>
-    </div>
+
+  </main>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <script src="js/app.js"></script>
+
+  <div id="footer">
+    <footer>
+      <p>&copy; Dayo Domaine Jason & Steven 2022</p>
+    </footer>
   </div>
-  
-</main>
-<script>
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
 
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-</script>
-<script src="js/app.js"></script>
-<footer>
+</body>
 
-</footer>
-  </body>
-  </html>
+</html>
