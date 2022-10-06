@@ -1,11 +1,14 @@
 /* GLOBAL */
 
-
+body {
+  width: 100vw;
+}
 
 .wine-header {
   max-width: 100%;
   background-color: #314e16c3;
 }
+
 
 .wine-header h1 {
   text-align: center;
@@ -13,6 +16,27 @@
   font-family: 'Dancing Script', cursive;
   color: #ffffff;
   padding: 8px 8px 8px 32px;
+  margin-right: 8vw;
+  
+
+}
+
+.h2 {
+  text-align: center;
+  font-size:3.2vw;
+  font-family: 'Dancing Script', cursive;
+  color: #f5aaaa;
+  margin-top: 1.9vw;
+     text-shadow:
+     0.05em 0 rgba(0, 0, 0, 0.506),
+     0 0.05em rgba(0, 0, 0, 0.506),
+     -0.05em 0 rgba(0, 0, 0, 0.506),
+     0 -0.05em rgba(0, 0, 0, 0.506),
+     -0.05em -0.05em rgba(0, 0, 0, 0.506),
+     -0.05em 0.05em rgba(0, 0, 0, 0.506),
+     0.05em -0.05em rgba(0, 0, 0, 0.506),
+     0.05em 0.05em rgba(0, 0, 0, 0.506);
+
 }
 
 
@@ -87,10 +111,7 @@
 }
 
 
-/* .hero {
-    max-width: 10%;
-  
-  } */
+
 
 
 /* INDEX HTML HOMEPAGE */
@@ -178,8 +199,10 @@
 #front {
   display:flex;
   justify-content: center;
+
   margin-right: 3%;
   margin-top: 6%;
+
 }
 
  .img2 {
@@ -289,8 +312,57 @@
 
   background-image: url("../img/wallofwine.jpg");
 
-  max-height: 380px;
-  max-width:fit-content;
+  max-height: 900px;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.head6 {
+
+  background-image: url("../img/winepeeps.jpg");
+
+  max-height: 900px;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.head7 {
+
+  background-image: url("../img/winecellar3.jpg");
+
+  min-height: 900px;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.headV {
+
+  background-image: url("../img/barrelcellar2.jpg");
+
+  max-height: 100%;
+  max-width: 100%;
+
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -328,14 +400,14 @@
 #white-wine {
   float: left;
   margin-left: 25vw;
-  padding-top: 17vw;
+  padding-top: 8vw;
 
 }
 
 #red-wine {
   margin-right: 28vw;
   margin-left: 60vw;
-  padding-top: 20vw;
+  padding-top: 11vw;
 
 }
 
@@ -345,6 +417,13 @@
   position: relative;
 }
 
+.para {
+  color: #f3faf2;
+  width: 200px;
+  border: 5px solid #314e16c3;
+  padding: 10px;
+  margin: 20px;
+}
 
 p {
   color: #ffffff;
@@ -359,3 +438,82 @@ p {
   padding-top: 4vw;
 }
 
+
+/* winelanding */
+
+
+.column {
+  float: left;
+  width: 12%;
+  margin-top: 13vw;
+margin-right: 5vw;
+}
+
+.column:hover {
+  opacity: 88%;
+}
+
+.row {
+  margin-left: 24vw;
+}
+
+/* catalog */
+
+#winerow {
+margin-top: 6vw;
+  max-width: 10vw;
+  margin-left: 9vw;
+  max-height: 11vw;
+  
+}
+
+#winebig {
+  max-width: 10vw;
+margin-left: 1vw;
+}
+
+#all-wines {
+  background-color: rgba(65, 15, 15, 0.299);
+
+width: 100%;
+
+}
+
+#cat{
+  background-color: rgba(65, 15, 15, 0.299);
+}
+
+
+#footer {
+  position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 60px;   /* Height of the footer */
+   background: #314e16c3;
+
+/*varietal html*/
+
+.rowv{
+   /* margin-top: 6vw;
+    margin-left: 9vw;
+    max-height: 11vw;*/
+    max-width: 10vw;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    max-height: 11vw;
+    text-align: center;
+  }
+.columnv{
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  margin-right: 11vw;
+  height: 200px
+}
+
+#cab1 {
+  max-width: 5vw;
+  margin-left: 1vw;
+  object-fit: contain;
+
+}
