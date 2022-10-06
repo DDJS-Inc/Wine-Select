@@ -440,3 +440,29 @@ width: 100%;
 #cat{
   background-color: rgba(65, 15, 15, 0.299);
 }
+
+/*varietal html*/
+
+.rowv{
+   /* margin-top: 6vw;
+    margin-left: 9vw;
+    max-height: 11vw;*/
+    max-width: 10vw;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    max-height: 11vw;
+    text-align: center;
+  }
+.columnv{
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  margin-right: 11vw;
+  height: 200px
+}
+
+#cab1 {
+  max-width: 5vw;
+  margin-left: 1vw;
+  object-fit: contain;
+}
