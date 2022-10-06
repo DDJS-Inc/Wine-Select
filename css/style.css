@@ -66,7 +66,6 @@
 
 
 .openbtn {
-  /* padding: 8px 8px 8px 32px; */
   font-size: 2vw;
   cursor: pointer;
   background-color: #4b221300;
@@ -111,23 +110,23 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 3vw;
   text-align: center;
-  padding-top: 15vw;
-  border-radius: 20%;
+  border-radius: 6%;
 }
 
 .choose1:hover {
   opacity: 80%;
 }
 
-#wine {
-  float: left;
-  margin-left: 2vw;
+#img3 {
+  margin-right: 50%;
 }
 
-#diner1 {
-  margin-right: 2vw;
+#front2 {
+  display:flex;
+  justify-content: center;
+  margin: 25%;
+  margin-top: 10%;
 }
 
 #indexpic {
@@ -135,21 +134,39 @@
   position: relative;
 }
 
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  max-width: 90%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  left: 6%;
+  bottom: 24px;
+}
+
+
+.container2:hover .overlay3 {
+  opacity: 8;
+}
+
 
 /* EVENT HTML*/
 
 
-
-=======
 .img2 {
   max-height: 500px;
   max-width: 220px;
   padding: 20px;
   border-radius: 10%;
-  /* border: 5px solid rgb(255, 255, 255); */
 }
-
-
 
 #back {
   position: absolute;
@@ -158,25 +175,11 @@
 }
 
 
-/* #container-event {
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 500px; */
-  /* background-color: blue;
-} */ 
-
 #front {
-
   display:flex;
-  /* z-index: 9; */
-  /* position: relative; */
   justify-content: center;
-  /* background-color: orange; */
-  /* paddin\\-top: 10%; */
-  /* margin-right: 50%; */
-  margin-top: 10%;
-
+  margin-right: 3%;
+  margin-top: 6%;
 }
 
  .img2 {
@@ -184,21 +187,20 @@
   max-width: 100%;
   padding: 20px;
   border-radius: 10%;
-  /* border: 5px solid rgb(255, 255, 255); */
-
 }
 
 .container2 {
   position: relative;
   margin: 20px;
-  /* width: 100%; */
-  /* max-height: 100%; */
-  /* max-width: 100%; */
-  /* background-color: red; */
   justify-content: center;
-  
-  /* margin-left: auto;
-  margin-right: auto; */
+}
+
+#overlay2 {
+  bottom: 24px;
+}
+
+#overlay2:hover {
+  background-color: #314e16c3;
 }
 
 .overlay {
@@ -208,14 +210,14 @@
   background: rgba(0, 0, 0, 0.5);
   /* Black see-through */
   color: #f1f1f1;
-  width: 62.5%;
+  max-width: 90%;
   transition: .5s ease;
   opacity: 0;
   color: white;
   font-size: 20px;
   padding: 20px;
   text-align: center;
-  left: 7%;
+  left: 6%;
   bottom: 24px;
 }
 
@@ -257,8 +259,7 @@
 .head3 {
   background-image: url("../img/background2.jpg");
 
-  min-height: 380px;
-
+  min-height: 40vw;
 
   /* Center and scale the image nicely */
   background-position: center;
