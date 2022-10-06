@@ -26,7 +26,7 @@ function Wine(name, category, fileExtension = 'png') {
   this.name = name;
   this.img = `./wineimg/${name}.${fileExtension}`;
   this.category = category;
-  this.link = `./winecatalouge/${name}.html`;
+  this.link = `./winecatalouge-htmls/${name}.html`;
   wineArray.push(this);
 }
 
