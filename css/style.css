@@ -1,4 +1,5 @@
 /* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
@@ -20,16 +21,17 @@ body {
   color: #ffffff;
   padding: 8px 8px 8px 32px;
   margin-right: 8vw;
-  
+
 
 }
 
 .h2 {
   text-align: center;
-  font-size:3.2vw;
+  font-size: 3.2vw;
   font-family: 'Dancing Script', cursive;
   color: #98e3a2;
   margin-top: 1.9vw;
+
      text-shadow:
      0.02em 0 rgba(0, 0, 0, 0.506),
      0 0.02em rgba(0, 0, 0, 0.506),
@@ -39,6 +41,7 @@ body {
      -0.02em 0.02em rgba(0, 0, 0, 0.506),
      0.02em -0.02em rgba(0, 0, 0, 0.506),
      0.02em 0.02em rgba(0, 0, 0, 0.506);
+
 
 }
 
@@ -147,7 +150,7 @@ body {
 }
 
 #front2 {
-  display:flex;
+  display: flex;
   justify-content: center;
   margin: 25%;
   margin-top: 10%;
@@ -200,15 +203,14 @@ body {
 
 
 #front {
-  display:flex;
+  display: flex;
   justify-content: center;
 
   margin-right: 3%;
-  margin-top: 6%;
-
+  margin-top: 2%;
 }
 
- .img2 {
+.img2 {
   max-height: 500px;
   max-width: 100%;
   padding: 20px;
@@ -268,7 +270,7 @@ body {
 
 .head2 {
   background-image: url("../img/grapesinhand.jpg");
-  
+
   min-height: 380px;
 
 
@@ -392,6 +394,7 @@ body {
   /* Needed to position the navbar */
   position: relative;
 }
+
 /* PREF HTML */
 
 #cont3 {
@@ -481,7 +484,7 @@ p {
   float: left;
   width: 12%;
   margin-top: 13vw;
-margin-right: 5vw;
+  margin-right: 5vw;
 }
 
 .column:hover {
@@ -495,26 +498,26 @@ margin-right: 5vw;
 /* catalog */
 
 #winerow {
-margin-top: 6vw;
+  margin-top: 6vw;
   max-width: 10vw;
   margin-left: 9vw;
   max-height: 11vw;
-  
+
 }
 
 #winebig {
   max-width: 10vw;
-margin-left: 1vw;
+  margin-left: 1vw;
 }
 
 #all-wines {
   background-color: rgba(65, 15, 15, 0.299);
 
-width: 100%;
+  width: 100%;
 
 }
 
-#cat{
+#cat {
   background-color: rgba(65, 15, 15, 0.299);
 }
 
@@ -559,6 +562,7 @@ li {
 /* wine favs */
 
 .wineimg1 {
+
   max-height: 18vw;
   margin-left: 5vw;
   margin-top: 4vw;
@@ -575,25 +579,20 @@ li {
 
 
 
-
 /*varietal html*/
 
-.rowv{
-   /* margin-top: 6vw;
-    margin-left: 9vw;
-    max-height: 11vw;*/
-    max-width: 10vw;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    max-height: 11vw;
-    text-align: center;
-  }
-.columnv{
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  margin-right: 11vw;
-  height: 200px
+.rowv {
+
+  display: flex;
+  justify-content: center;
+}
+
+.columnv {
+  position: relative;
+  white-space: 150px;
+  justify-content: center;
+  padding-inline: 4%;
+
 }
 
 #cab1 {
@@ -602,4 +601,57 @@ li {
   object-fit: contain;
 }
 
+}
+
+.winev1 {
+  width: 167px;
+}
+
+.winev2 {
+  width: 123px;
+
+}
+
+.winev3 {
+  width: 165px;
+}
+
+.winev4 {
+  width: 133px;
+}
+
+.winev5 {
+  width: 174px;
+}
+
+.winev6 {
+  width: 128px;
+}
+
+.winev7 {
+  width: 428px;
+}
+
+.winev8 {
+  width: 424px;
+}
+
+.winev9 {
+  width: 145px;
+}
+
+.winev10 {
+  width: 473px;
+  padding-left: 26%;
+}
+
+.winev11 {
+  width: 128px;
+}
+
+
+
+.winev12 {
+  width: 430px;
+  padding-left: 26%;
 
