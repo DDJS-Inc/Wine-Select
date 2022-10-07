@@ -577,6 +577,13 @@ li {
   margin-bottom: 3vw;
   } 
 
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+    background: #314e16c3;
+ }
 
 
 /*varietal html*/
@@ -601,7 +608,6 @@ li {
   object-fit: contain;
 }
 
-}
 
 .winev1 {
   width: 167px;
@@ -654,4 +660,4 @@ li {
 .winev12 {
   width: 430px;
   padding-left: 26%;
-
+}
